@@ -6,6 +6,7 @@ from myutils import Kabsch_batch, align, make_pdb
 from optparse import OptionParser
 import time
 import multiprocessing as mp
+torch.multiprocessing.set_sharing_strategy('file_system')
 
 def init_from_parser():
     parser = OptionParser()
