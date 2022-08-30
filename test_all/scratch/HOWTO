@@ -1,0 +1,5 @@
+1) first, generate smiles
+> ~hpark/bin/obabel  input.mol2 -o smi input.smi
+
+2) run rdkit script
+> ~hpark/bin/python-rdkit confgen.py input.smi

@@ -1,0 +1,8 @@
+python ../Aligner.py  -m ../npzs/CB/CB.0.npz -p pharamacophore.txt
+
+if you want to more options
+> refer the function init_form_parser() in Aligner.py
+> or python Aligner.py
+
+ex) to get top 20 results with pdb
+> python ../Aligner.py  -m ../npzs/CB/CB.0.npz -p pharamacophore.txt --np 10 -n 20 --report_pdb
